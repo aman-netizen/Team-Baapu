@@ -61,3 +61,11 @@ Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+<img width="931" alt="image" src="https://user-images.githubusercontent.com/82169120/212569233-62ad7c0b-a791-478c-959b-3f0d11cb1814.png">
+<img width="922" alt="image" src="https://user-images.githubusercontent.com/82169120/212569100-0831baf2-575d-4ddc-8850-15f13d732873.png">
+<img width="921" alt="image" src="https://user-images.githubusercontent.com/82169120/212569168-be38bfe9-faba-4c45-b65f-8b51cb371644.png">
+<img width="920" alt="image" src="https://user-images.githubusercontent.com/82169120/212569204-e84f4910-6f58-4a79-9bc7-a70303b8c541.png">
+<img width="666" alt="image" src="https://user-images.githubusercontent.com/82169120/212569222-c536387c-b8d1-44ed-a06e-1150d984a90e.png">
+
+
