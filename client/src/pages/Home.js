@@ -72,21 +72,21 @@ function Home() {
           }}
         >
           <option value="selectCompany">Select Company</option>
-          <option value="https://stockx-frontend.onrender.com/:NSE">NSE</option>
-          <option value="https://stockx-frontend.onrender.com/:BSE">BSE</option>
-          <option value="https://stockx-frontend.onrender.com/:ASHOKLEY">
+          <option value="/:NSE">NSE</option>
+          <option value="/:BSE">BSE</option>
+          <option value="/:ASHOKLEY">
             ASHOKLEY
           </option>
-          <option value="https://stockx-frontend.onrender.com/:CIPLA">
+          <option value="/:CIPLA">
             CIPLA
           </option>
-          <option value="https://stockx-frontend.onrender.com/:RELIANCE">
+          <option value="/:RELIANCE">
             RELIANCE
           </option>
-          <option value="https://stockx-frontend.onrender.com/:TATASTEEL">
+          <option value="/:TATASTEEL">
             TATA STEEL
           </option>
-          <option value="https://stockx-frontend.onrender.com/:EICHERMOTORS">
+          <option value="/:EICHERMOTORS">
             EICHER MOTOR
           </option>
         </select>
