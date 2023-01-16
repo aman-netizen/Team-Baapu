@@ -8,7 +8,7 @@ import { GoTriangleUp } from "react-icons/go";
 import { GoTriangleDown } from "react-icons/go";
 import { useParams } from "react-router-dom";
 import { hideLoading, showLoading } from "../redux/alertsSlice";
-import Stock from '../components/Stock'
+import Stock from "../components/Stock";
 
 function Home() {
   const [companyData, setCompanyData] = useState();
@@ -59,7 +59,7 @@ function Home() {
   useEffect(() => {
     findData();
   }, []);
-  
+
   return (
     <div className="details">
       <div className="nav-bar">
@@ -72,13 +72,21 @@ function Home() {
           }}
         >
           <option value="selectCompany">Select Company</option>
-          <option value="http://localhost:3000/:NSE">NSE</option>
-          <option value="http://localhost:3000/:BSE">BSE</option>
-          <option value="http://localhost:3000/:ASHOKLEY">ASHOKLEY</option>
-          <option value="http://localhost:3000/:CIPLA">CIPLA</option>
-          <option value="http://localhost:3000/:RELIANCE">RELIANCE</option>
-          <option value="http://localhost:3000/:TATASTEEL">TATA STEEL</option>
-          <option value="http://localhost:3000/:EICHERMOTORS">
+          <option value="https://stockx-frontend.onrender.com/:NSE">NSE</option>
+          <option value="https://stockx-frontend.onrender.com/:BSE">BSE</option>
+          <option value="https://stockx-frontend.onrender.com/:ASHOKLEY">
+            ASHOKLEY
+          </option>
+          <option value="https://stockx-frontend.onrender.com/:CIPLA">
+            CIPLA
+          </option>
+          <option value="https://stockx-frontend.onrender.com/:RELIANCE">
+            RELIANCE
+          </option>
+          <option value="https://stockx-frontend.onrender.com/:TATASTEEL">
+            TATA STEEL
+          </option>
+          <option value="https://stockx-frontend.onrender.com/:EICHERMOTORS">
             EICHER MOTOR
           </option>
         </select>
