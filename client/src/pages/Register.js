@@ -12,7 +12,10 @@ function Register() {
     const onFinish = async (values) => {
         try {
             dispatch(showLoading());
-            const response = await axios.post('/api/users/register', values);
+            const response = await axios.post(
+              "https://stockx-backend.onrender.com/api/users/register",
+              values
+            );
             dispatch(hideLoading());
             if (response.data.success) {
                 toast.success(response.data.message);

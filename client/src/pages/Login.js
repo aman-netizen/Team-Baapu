@@ -12,7 +12,10 @@ function Login() {
   const onComplete = async (values) => {
     try {
       dispatch(showLoading());
-      const response = await axios.post("/api/users/login", values);
+      const response = await axios.post(
+        "https://stockx-backend.onrender.com/api/users/login",
+        values
+      );
       dispatch(hideLoading());
       if (response.data.success) {
         toast.success(response.data.message);

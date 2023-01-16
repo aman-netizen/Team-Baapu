@@ -21,9 +21,12 @@ function Home() {
   const findData = async () => {
     try {
       dispatch(showLoading());
-      const response = await axios.post("/api/companyData/:companyName", {
-        companyName: params.companyName,
-      });
+      const response = await axios.post(
+        "https://stockx-backend.onrender.com/api/companyData/:companyName",
+        {
+          companyName: params.companyName,
+        }
+      );
       dispatch(hideLoading());
       if (response.data.success) {
         const length = response.data.data.length;

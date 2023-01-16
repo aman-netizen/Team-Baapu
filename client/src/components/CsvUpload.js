@@ -12,11 +12,13 @@ function App() {
   const [totalstocks, setTotalstocks] = useState(null);
 
   useEffect(() => {
-    Axios.get("/api/csv/getStock").then((response) => {
-      if (response != null) {
-        setFile(response);
+    Axios.get("https://stockx-backend.onrender.com/api/csv/getStock").then(
+      (response) => {
+        if (response != null) {
+          setFile(response);
+        }
       }
-    });
+    );
   }, []);
 
   return (
@@ -69,32 +71,6 @@ function App() {
               <div className="data-2">Average value : {average}</div>
             )}
           </div>
-          {acceptedFile && (
-            <center>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Id</th>
-                    <th>Trade_type</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {file.data.map((item) => {
-                    return (
-                      <tr key={item.id}>
-                        <td>{item.id}</td>
-                        <td>{item.trade_type}</td>
-                        <td>{item.quantity}</td>
-                        <td>{item.price}</td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </center>
-          )}
           <center>
             {acceptedFile && (
               <button onClick={reset} className="button">
