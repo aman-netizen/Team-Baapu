@@ -72,21 +72,21 @@ function Home() {
           }}
         >
           <option value="selectCompany">Select Company</option>
-          <option value="/:NSE">NSE</option>
-          <option value="/:BSE">BSE</option>
-          <option value="/:ASHOKLEY">
+          <option value=":NSE">NSE</option>
+          <option value=":BSE">BSE</option>
+          <option value=":ASHOKLEY">
             ASHOKLEY
           </option>
-          <option value="/:CIPLA">
+          <option value=":CIPLA">
             CIPLA
           </option>
-          <option value="/:RELIANCE">
+          <option value=":RELIANCE">
             RELIANCE
           </option>
-          <option value="/:TATASTEEL">
+          <option value=":TATASTEEL">
             TATA STEEL
           </option>
-          <option value="/:EICHERMOTORS">
+          <option value=":EICHERMOTORS">
             EICHER MOTOR
           </option>
         </select>

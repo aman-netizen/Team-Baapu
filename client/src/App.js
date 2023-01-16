@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { Toaster } from "react-hot-toast";
 import { useSelector } from "react-redux";
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProtectedRoute from "./components/ProtectedRoute";
 import PublicRoute from "./components/PublicRoute";
 import Home from "./pages/Home";
@@ -21,6 +21,7 @@ function App() {
       <Toaster position="top-center" reverseOrder={false} />
       <Routes>
         <Route
+          exact
           path="/register"
           element={
             <PublicRoute>
@@ -29,6 +30,7 @@ function App() {
           }
         />
         <Route
+          exact
           path="/login"
           element={
             <PublicRoute>
@@ -37,6 +39,7 @@ function App() {
           }
         />
         <Route
+          exact
           path="/"
           element={
             <ProtectedRoute>
@@ -45,6 +48,7 @@ function App() {
           }
         />
         <Route
+          exact
           path="/:companyName"
           element={
             <ProtectedRoute>
@@ -57,4 +61,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
