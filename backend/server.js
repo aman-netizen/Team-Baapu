@@ -17,7 +17,7 @@ app.use("/api/users", userRoute);
 app.use("/api/companyData", companyRoute);
 // app.use("/api/csv", uploadCSVRoute);
 
-api.get('/', (req, res) => {
+app.get('/', (req, res) => {
   res.send("welcome to this universe");
 })
 
