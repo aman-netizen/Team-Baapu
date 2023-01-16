@@ -21,7 +21,7 @@ function App() {
       <Toaster position="top-center" reverseOrder={false} />
       <Routes>
         <Route
-          path="https://stockx-frontend.onrender.com/register"
+          path="/register"
           element={
             <PublicRoute>
               <Register />
@@ -29,7 +29,7 @@ function App() {
           }
         />
         <Route
-          path="https://stockx-frontend.onrender.com/login"
+          path="/login"
           element={
             <PublicRoute>
               <Login />
@@ -37,7 +37,7 @@ function App() {
           }
         />
         <Route
-          path="https://stockx-frontend.onrender.com/"
+          path="/"
           element={
             <ProtectedRoute>
               <Home />
@@ -45,7 +45,7 @@ function App() {
           }
         />
         <Route
-          path="https://stockx-frontend.onrender.com/:companyName"
+          path="/:companyName"
           element={
             <ProtectedRoute>
               <Home />
